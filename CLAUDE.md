@@ -25,6 +25,7 @@ site/            Published folder (Netlify publish dir)
   pathway.html   The seven steps, review classes, worked example, checklist (#bring), family track
   apply.html     Application form (Netlify Forms, name="apply", posts to /thanks)
   thanks.html    Confirmation page after submit
+  privacy.html   Privacy policy (draft, under legal review). Linked from every footer and the apply consent line
   images/        Optimized JPEGs (Meiji-style CellHaus prints, max 1800px wide)
   brand.css      Brand layer: logo mark, hanko seal, seigaiha wave bands, watermarks, eyebrow dots
   favicon.svg    The CellHaus mark (vermilion ring, rose nucleus)
@@ -55,6 +56,6 @@ netlify.toml     Publish dir, pretty URLs, headers, noindex for the draft
 ## Open items (ask Elliot before changing)
 
 - Custom domain (none set yet). Remove `noindex` in `netlify.toml` and the pages' `<meta name="robots">` only at launch.
-- Privacy policy page for the application form (it collects health information). Needed before launch.
+- Privacy policy: drafted at site/privacy.html. Needs legal review before launch, then remove the "Draft policy" note. Assumed commitments to confirm: 24 month deletion for non-admitted applicants, 30 day reply to data requests, separate consent before registry entries, US storage via Netlify, under-18s applied for by a parent or guardian.
 - Legal review of the consent line on apply.html.
 - Analytics (none added).
