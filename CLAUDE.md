@@ -56,6 +56,6 @@ netlify.toml     Publish dir, pretty URLs, headers, noindex for the draft
 ## Open items (ask Elliot before changing)
 
 - Custom domain (none set yet). Remove `noindex` in `netlify.toml` and the pages' `<meta name="robots">` only at launch.
-- Privacy policy: drafted at site/privacy.html. Needs legal review before launch, then remove the "Draft policy" note. Assumed commitments to confirm: 24 month deletion for non-admitted applicants, 30 day reply to data requests, separate consent before registry entries, US storage via Netlify, under-18s applied for by a parent or guardian.
+- Privacy policy: drafted at site/privacy.html. Needs legal review before launch, then remove the "Draft policy" note. Assumed commitments to confirm: 24 month deletion for non-admitted applicants, 30 day reply to data requests, separate consent before registry entries, US storage via Netlify, under-18s applied for by a parent or guardian. Section 11 (APPI) also needs: the business operator's legal name, address and representative (placeholder on the page), confirmation of Netlify's DPA, and the security measures it lists (personal accounts, reviewer confidentiality).
 - Legal review of the consent line on apply.html.
 - Analytics (none added).
