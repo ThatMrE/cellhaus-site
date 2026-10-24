@@ -1,0 +1,66 @@
+/* CellHaus brand elements: logo mark, seal, wave bands, ornaments.
+   Page layout stays inline (from the design canvas). This file only adds the brand layer. */
+
+:root{
+  --ch-dark:#16140F; --ch-cream:#F3ECDD; --ch-card:#2A2620; --ch-rose:#E8B4A6;
+  --ch-red:#C9452E; --ch-red-bright:#FF6A4D; --ch-red-deep:#A8361F; --ch-indigo:#1B2440;
+}
+
+/* Logo mark: cell membrane ring + nucleus */
+.ch-mark{display:inline-block;flex:none;vertical-align:middle}
+.ch-mark .ring{fill:none;stroke:var(--ch-ring,var(--ch-red-bright));stroke-width:5}
+.ch-mark .nuc{fill:var(--ch-nuc,var(--ch-rose))}
+.ch-mark .orbit{fill:none;stroke:var(--ch-ring,var(--ch-red-bright));stroke-width:1.5;opacity:.55}
+.ch-on-cream{--ch-ring:var(--ch-red-deep);--ch-nuc:var(--ch-red)}
+
+/* Header lockup */
+.ch-lockup{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ch-cream)}
+.ch-lockup .ch-mark{width:34px;height:34px;transition:transform .6s ease}
+.ch-lockup:hover .ch-mark{transform:rotate(90deg)}
+.ch-lockup:hover{color:var(--ch-cream)}
+
+/* Hanko seal: vertical kanji stamp */
+.ch-seal{display:inline-flex;align-items:center;justify-content:center;writing-mode:vertical-rl;
+  font-family:'Shippori Mincho',serif;font-weight:700;color:var(--ch-cream);background:var(--ch-red);
+  border-radius:4px;box-shadow:inset 0 0 0 3px var(--ch-red),inset 0 0 0 5px rgba(243,236,221,.85);
+  font-size:20px;line-height:1;letter-spacing:4px;padding:14px 10px;transform:rotate(-4deg);
+  user-select:none;flex:none}
+.ch-seal.sm{font-size:14px;letter-spacing:2px;padding:10px 7px}
+.ch-seal.lg{font-size:28px;letter-spacing:6px;padding:20px 14px}
+
+/* Seigaiha wave band between sections */
+.ch-wave{height:30px;background-repeat:repeat-x;background-size:40px 30px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 30'%3E%3Cg fill='%2316140F' stroke='%23E8B4A6' stroke-opacity='.55' stroke-width='1.2'%3E%3Ccircle cx='0' cy='30' r='19'/%3E%3Ccircle cx='0' cy='30' r='14'/%3E%3Ccircle cx='0' cy='30' r='9'/%3E%3Ccircle cx='0' cy='30' r='4'/%3E%3Ccircle cx='40' cy='30' r='19'/%3E%3Ccircle cx='40' cy='30' r='14'/%3E%3Ccircle cx='40' cy='30' r='9'/%3E%3Ccircle cx='40' cy='30' r='4'/%3E%3Ccircle cx='20' cy='30' r='19'/%3E%3Ccircle cx='20' cy='30' r='14'/%3E%3Ccircle cx='20' cy='30' r='9'/%3E%3Ccircle cx='20' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");}
+.ch-wave.on-cream{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 30'%3E%3Cg fill='%23F3ECDD' stroke='%23C9452E' stroke-opacity='.45' stroke-width='1.2'%3E%3Ccircle cx='0' cy='30' r='19'/%3E%3Ccircle cx='0' cy='30' r='14'/%3E%3Ccircle cx='0' cy='30' r='9'/%3E%3Ccircle cx='0' cy='30' r='4'/%3E%3Ccircle cx='40' cy='30' r='19'/%3E%3Ccircle cx='40' cy='30' r='14'/%3E%3Ccircle cx='40' cy='30' r='9'/%3E%3Ccircle cx='40' cy='30' r='4'/%3E%3Ccircle cx='20' cy='30' r='19'/%3E%3Ccircle cx='20' cy='30' r='14'/%3E%3Ccircle cx='20' cy='30' r='9'/%3E%3Ccircle cx='20' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");}
+.ch-wave.on-sand{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 30'%3E%3Cg fill='%23EAE1CE' stroke='%23A8361F' stroke-opacity='.4' stroke-width='1.2'%3E%3Ccircle cx='0' cy='30' r='19'/%3E%3Ccircle cx='0' cy='30' r='14'/%3E%3Ccircle cx='0' cy='30' r='9'/%3E%3Ccircle cx='0' cy='30' r='4'/%3E%3Ccircle cx='40' cy='30' r='19'/%3E%3Ccircle cx='40' cy='30' r='14'/%3E%3Ccircle cx='40' cy='30' r='9'/%3E%3Ccircle cx='40' cy='30' r='4'/%3E%3Ccircle cx='20' cy='30' r='19'/%3E%3Ccircle cx='20' cy='30' r='14'/%3E%3Ccircle cx='20' cy='30' r='9'/%3E%3Ccircle cx='20' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");}
+
+/* Band backgrounds show between the scallops */
+.ch-wave.bg-dark{background-color:var(--ch-dark)}.ch-wave.bg-cream{background-color:var(--ch-cream)}.ch-wave.bg-sand{background-color:#EAE1CE}
+
+/* Ornament divider: hairline, mark, hairline */
+.ch-orn{display:flex;align-items:center;gap:16px;width:100%;max-width:420px}
+.ch-orn::before,.ch-orn::after{content:"";flex:1;height:1px;background:currentColor;opacity:.35}
+.ch-orn .ch-mark{width:22px;height:22px}
+
+/* Eyebrow labels get a small cell dot */
+.ch-eyebrow{display:flex;align-items:flex-start;gap:12px}
+.ch-eyebrow::before{content:"";flex:none;margin-top:.42em;width:9px;height:9px;border-radius:50%;
+  border:2px solid currentColor;box-shadow:inset 0 0 0 2px transparent;
+  background:radial-gradient(circle,currentColor 0 2px,transparent 2.5px)}
+
+/* Large faint mark in a section corner */
+.ch-host{position:relative;overflow:hidden}
+.ch-host > *{position:relative}
+.ch-host > .ch-watermark{position:absolute;pointer-events:none;width:520px;height:520px;opacity:.07}
+.ch-watermark.tr{top:-140px;right:-160px}
+.ch-watermark.bl{bottom:-180px;left:-180px}
+.ch-watermark.br{bottom:-160px;right:-140px}
+@media (max-width:700px){.ch-host > .ch-watermark{width:340px;height:340px}}
+
+/* Seal placement helpers */
+.ch-seal-corner{position:absolute;right:24px;top:24px;z-index:1}
+@media (max-width:700px){.ch-seal-corner{right:16px;top:16px}.ch-seal-corner .ch-seal{font-size:14px;padding:10px 7px;letter-spacing:2px}}
+
+@media (prefers-reduced-motion:reduce){.ch-lockup .ch-mark{transition:none}}

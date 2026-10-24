@@ -1,0 +1,10 @@
+{
+  "name": "cellhaus-site",
+  "private": true,
+  "description": "CellHaus Accelerator website (static, Netlify)",
+  "scripts": {
+    "dev": "npx netlify-cli dev --dir=site",
+    "deploy:draft": "npx netlify-cli deploy --dir=site --message \"Draft deploy\"",
+    "deploy:prod": "npx netlify-cli deploy --dir=site --prod"
+  }
+}

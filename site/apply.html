@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply · CellHaus</title>
+<meta name="description" content="Apply to CellHaus Cohort 2. Applications close 31 May 2027.">
+<meta property="og:title" content="Apply · CellHaus">
+<meta property="og:description" content="Apply to CellHaus Cohort 2. Applications close 31 May 2027.">
+<meta property="og:image" content="/images/wave.jpg">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/brand.css">
+<style>
+body{margin:0;background:#F3ECDD}
+a{color:#A8361F}a:hover{color:#C9452E}
+input,select,textarea{font:inherit}
+.pill{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border:1px solid #6B6458;cursor:pointer;font-size:17px}
+.pill input{position:absolute;opacity:0;width:1px;height:1px}
+.pill:has(input:checked){background:#C9452E;border-color:#C9452E;color:#F3ECDD;font-weight:600}
+.pill:has(input:focus-visible){outline:3px solid #1B2440;outline-offset:2px}
+</style>
+</head>
+<body>
+<div style="background: #F3ECDD; color: #1B2440; font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.55;">
+
+<header style="position: sticky; top: 0; z-index: 5; background: rgba(22,20,15,0.96);">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between;">
+<a href="/" class="ch-lockup" aria-label="CellHaus home"><svg class="ch-mark " viewBox="0 0 64 64" aria-hidden="true"><circle class="orbit" cx="32" cy="32" r="29.5"/><circle class="ring" cx="32" cy="32" r="20"/><circle class="nuc" cx="32" cy="32" r="7"/></svg><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 28px; font-weight: 500;">CellHaus</span><span style="font-family: 'Shippori Mincho', serif; font-size: 18px; color: #E8B4A6;">細胞館</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; font-size: 16px;">
+<a href="/#program" style="color: #F3ECDD; text-decoration: none;">Program</a>
+<a href="/pathway" style="color: #F3ECDD; text-decoration: none;">The pathway</a>
+<a href="/pathway#bring" style="color: #F3ECDD; text-decoration: none;">Checklist</a>
+<a href="/apply" aria-current="page" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; background: #C9452E; color: #F3ECDD; text-decoration: none; font-weight: 600;">Apply</a>
+</div>
+</nav>
+</header>
+
+<section style="position: relative; min-height: 420px; display: flex; align-items: flex-end; overflow: hidden; color: #F3ECDD;">
+<div class="ch-seal-corner"><span class="ch-seal " aria-hidden="true">細胞館</span></div>
+<img src="/images/port-island.jpg" alt="A Meiji-style print of a queue at Port Island, Kobe." style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+<div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(22,20,15,0.3) 0%, rgba(22,20,15,0.9) 70%, rgba(22,20,15,1) 100%);"></div>
+<div style="position: relative; max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 24px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
+<p class="ch-eyebrow" style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #E8B4A6;">Apply · Cohort 2 · Kobe 2027 · closes 31 May 2027</p>
+<h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: clamp(40px, 6vw, 72px); font-weight: 500; line-height: 1.04;">Apply to the CellHaus Accelerator</h1>
+<p style="margin: 0; font-size: 20px; max-width: 720px;">Takes about 15 minutes. You do not need every file yet. Tell us what you have.</p>
+</div>
+</section>
+<div class="ch-wave on-cream bg-dark" aria-hidden="true"></div>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 112px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start;">
+
+<div style="flex: 999 1 560px; min-width: 0;">
+<form name="apply" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field" style="display: flex; flex-direction: column; gap: 36px;">
+
+<input type="hidden" name="form-name" value="apply">
+<p hidden><label>Leave this empty <input name="bot-field"></label></p>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 14px;">
+<legend style="padding: 0; margin-bottom: 14px; font-family: 'EB Garamond', Georgia, serif; font-size: 32px;">1 · Who are you?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<label class="pill"><input type="radio" name="role" value="patient" checked><span>Patient-founder</span></label>
+<label class="pill"><input type="radio" name="role" value="parent"><span>Parent founder</span></label>
+<label class="pill"><input type="radio" name="role" value="company"><span>Early-stage company</span></label>
+<label class="pill"><input type="radio" name="role" value="family"><span>Family member or guide</span></label>
+</div>
+</fieldset>
+
+<fieldset style="margin: 0; padding: 0; border: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px 24px;">
+<legend style="padding: 0; margin-bottom: 14px; font-family: 'EB Garamond', Georgia, serif; font-size: 32px;">2 · Contact</legend>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Full name<input type="text" name="name" autocomplete="name" required style="min-height: 48px; padding: 0 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Email<input type="email" name="email" autocomplete="email" required style="min-height: 48px; padding: 0 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Country you live in<input type="text" name="country" autocomplete="country-name" style="min-height: 48px; padding: 0 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Company name (if any)<input type="text" name="company" autocomplete="organization" style="min-height: 48px; padding: 0 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;"></label>
+</fieldset>
+
+<fieldset style="margin: 0; padding: 0; border: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px 24px;">
+<legend style="padding: 0; margin-bottom: 14px; font-family: 'EB Garamond', Georgia, serif; font-size: 32px;">3 · Disease and therapy</legend>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Disease or condition<input type="text" name="disease" style="min-height: 48px; padding: 0 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Therapy type
+<select name="therapy" style="min-height: 48px; padding: 0 12px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;">
+<option>Dendritic cell vaccine (own cells)</option>
+<option>TIL or other expanded T cells</option>
+<option>CAR-T or gene-edited cells</option>
+<option>iPS-derived cells</option>
+<option>In vivo gene therapy (for example AAV)</option>
+<option>mRNA or peptide vaccine (we will discuss a cell route)</option>
+<option>Not sure yet</option>
+</select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">Stage
+<select name="stage" style="min-height: 48px; padding: 0 12px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;">
+<option>Idea or design only</option>
+<option>Preclinical data</option>
+<option>Treated a patient elsewhere</option>
+<option>Past Phase 1</option>
+</select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">When do you hope to start?
+<select name="timing" style="min-height: 48px; padding: 0 12px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440;">
+<option>As soon as possible</option>
+<option>In 3 to 6 months</option>
+<option>In 6 to 12 months</option>
+<option>Exploring for now</option>
+</select></label>
+</fieldset>
+
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 12px;">
+<legend style="padding: 0; margin-bottom: 14px; font-family: 'EB Garamond', Georgia, serif; font-size: 32px;">4 · What you have today</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 24px;">
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="records" style="width: 22px; height: 22px; accent-color: #C9452E;">Full medical records</label>
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="tissue" style="width: 22px; height: 22px; accent-color: #C9452E;">Tumor tissue sample</label>
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="raw" style="width: 22px; height: 22px; accent-color: #C9452E;">Raw sequence files (FASTQ or BAM)</label>
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="hla" style="width: 22px; height: 22px; accent-color: #C9452E;">HLA type</label>
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="design" style="width: 22px; height: 22px; accent-color: #C9452E;">A therapy design or target list</label>
+<label style="display: flex; gap: 12px; align-items: center; min-height: 44px;"><input type="checkbox" name="has" value="letter" style="width: 22px; height: 22px; accent-color: #C9452E;">Support from my home oncologist</label>
+</div>
+</fieldset>
+
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 12px;">
+<legend style="padding: 0; margin-bottom: 14px; font-family: 'EB Garamond', Georgia, serif; font-size: 32px;">5 · Your story</legend>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 16px;">What have you tried, and what do you want to do in Kobe?<textarea name="story" rows="6" style="padding: 12px 14px; border: 1px solid #6B6458; background: #FFFCF5; color: #1B2440; resize: vertical;"></textarea></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px;"><input type="checkbox" name="consent" required style="width: 22px; height: 22px; margin-top: 3px; accent-color: #C9452E;">I understand CellHaus is not a clinic, that an independent doctor reviews my application, and that CellHaus track results go into an open registry.</label>
+</fieldset>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+<button type="submit" style="min-height: 52px; padding: 0 32px; background: #C9452E; color: #F3ECDD; border: 0; font-weight: 600; font-size: 18px; cursor: pointer;">Send my application</button>
+</div>
+</form>
+
+</div>
+
+<aside aria-label="What happens next" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 28px;">
+<img src="/images/return.jpg" alt="A Meiji-style print of a nurse returning a glowing vial of cells to a patient." style="width: 100%; height: 320px; object-fit: cover; display: block;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<div class="ch-orn ch-on-cream" style="color: #A8361F;"><svg class="ch-mark " viewBox="0 0 64 64" aria-hidden="true"><circle class="orbit" cx="32" cy="32" r="29.5"/><circle class="ring" cx="32" cy="32" r="20"/><circle class="nuc" cx="32" cy="32" r="7"/></svg></div>
+<h2 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 32px; font-weight: 500;">What happens next</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 17px;">
+<li style="display: flex; gap: 14px;"><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 26px; color: #A8361F; min-width: 22px;">1</span><span>An independent doctor reviews your application.</span></li>
+<li style="display: flex; gap: 14px;"><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 26px; color: #A8361F; min-width: 22px;">2</span><span>A video call about fit, your data and your options.</span></li>
+<li style="display: flex; gap: 14px;"><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 26px; color: #A8361F; min-width: 22px;">3</span><span>If you fit, we start step 1 with you: data and design.</span></li>
+<li style="display: flex; gap: 14px;"><span style="font-family: 'EB Garamond', Georgia, serif; font-size: 26px; color: #A8361F; min-width: 22px;">4</span><span>Cohort offers go out by 30 June 2027. The program starts in Kobe on 1 September 2027.</span></li>
+</ol>
+</div>
+<div class="ch-host" style="background: #EAE1CE; padding: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 16px;">
+<svg class="ch-mark ch-on-cream" viewBox="0 0 64 64" style="position: absolute; right: -50px; bottom: -50px; width: 180px; height: 180px; opacity: 0.12; pointer-events: none;" aria-hidden="true"><circle class="orbit" cx="32" cy="32" r="29.5"/><circle class="ring" cx="32" cy="32" r="20"/><circle class="nuc" cx="32" cy="32" r="7"/></svg>
+<p style="margin: 0; font-weight: 600;">No plan, no payment.</p>
+<p style="margin: 0; color: #3A4160;">You pay nothing for treatment until a committee reviews the plan and the doctor files it.</p>
+<p style="margin: 0; font-weight: 600;">Program fee</p>
+<p style="margin: 0; color: #3A4160;">$3,000 per month per founder. Sponsors may cover part or all of it.</p>
+<p style="margin: 0;">Questions? <a href="mailto:elliot@haus.fund">elliot@haus.fund</a></p>
+</div>
+</aside>
+
+</div>
+<div style="background: #16140F; color: #F3ECDD;">
+<div class="ch-wave bg-cream" aria-hidden="true"></div>
+<footer>
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 56px; justify-content: space-between; font-size: 15px; color: #B8AE9C;">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 520px;">
+<div style="display: flex; align-items: center; gap: 14px;"><svg class="ch-mark " viewBox="0 0 64 64" style="width: 44px; height: 44px;" aria-hidden="true"><circle class="orbit" cx="32" cy="32" r="29.5"/><circle class="ring" cx="32" cy="32" r="20"/><circle class="nuc" cx="32" cy="32" r="7"/></svg><p style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 24px; color: #F3ECDD;">CellHaus <span style="font-family: 'Shippori Mincho', serif; font-size: 16px; color: #E8B4A6;">細胞館</span></p><span class="ch-seal sm" aria-hidden="true">細胞館</span></div>
+<p style="margin: 0;">A Haus program in Kobe, Japan, with Mirai Tech City and Unchain Bio. CellHaus is not a clinic and does not give medical care. Licensed doctors and certified committees make every treatment decision.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<a href="/pathway" style="color: #DDD4C2;">The pathway</a>
+<a href="/apply" style="color: #DDD4C2;">Apply</a>
+<a href="mailto:elliot@haus.fund" style="color: #DDD4C2;">elliot@haus.fund</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>
