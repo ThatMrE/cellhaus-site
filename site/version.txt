@@ -1,2 +1,0 @@
-cellhaus-site
-auto-deploy test 2026-10-24T05:15:49Z
